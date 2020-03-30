@@ -1,18 +1,18 @@
 package com.ramazanpeker.escapecorona
 
-import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.view.Window
 import android.view.WindowManager
-import androidx.core.view.accessibility.AccessibilityNodeInfoCompat
 
-class MainActivity : AppCompatActivity() {
+class MainScreen : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
+
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+// Remember that you should never show the action bar if the
+// status bar is hidden, so hide that too if necessary.
+        setContentView(R.layout.activity_main_screen)
 
     }
 }
