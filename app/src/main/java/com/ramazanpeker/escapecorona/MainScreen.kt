@@ -30,4 +30,5 @@ class MainScreen : AppCompatActivity() {
         finish();
         System.exit(0);
     }
+
 }

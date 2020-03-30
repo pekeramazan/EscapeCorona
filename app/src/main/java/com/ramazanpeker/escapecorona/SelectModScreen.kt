@@ -17,25 +17,25 @@ class SelectModScreen : AppCompatActivity() {
 
     fun otuzClick(view: View)
     {
-        val intent= Intent(applicationContext,SelectModScreen::class.java)
+        val intent= Intent(applicationContext,PlayGameScreen::class.java)
         intent.putExtra("mod",30)
         startActivity(intent)
     }
-    fun atmisClick(view: View)
+    fun altmisClick(view: View)
     {
-        val intent= Intent(applicationContext,SelectModScreen::class.java)
+        val intent= Intent(applicationContext,PlayGameScreen::class.java)
         intent.putExtra("mod",60)
         startActivity(intent)
     }
     fun doksanClick(view: View)
     {
-        val intent= Intent(applicationContext,SelectModScreen::class.java)
+        val intent= Intent(applicationContext,PlayGameScreen::class.java)
         intent.putExtra("mod",90)
         startActivity(intent)
     }
     fun yuzyirmiClick(view: View)
     {
-        val intent= Intent(applicationContext,SelectModScreen::class.java)
+        val intent= Intent(applicationContext,PlayGameScreen::class.java)
         intent.putExtra("mod",120)
         startActivity(intent)
     }
