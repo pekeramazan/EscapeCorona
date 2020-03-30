@@ -150,7 +150,7 @@
             android:layout_height="90dp"
             android:layout_row="0"
             android:layout_column="3"
-            android:onClick="increaseScore"
+            android:onClick="decreaseScore"
 
             app:srcCompat="@drawable/virus" />
 
@@ -250,7 +250,7 @@
             android:layout_height="90dp"
             android:layout_row="3"
             android:layout_column="2"
-            android:onClick="increaseScore"
+            android:onClick="decreaseScore"
             app:srcCompat="@drawable/virus" />
 
         <ImageView
