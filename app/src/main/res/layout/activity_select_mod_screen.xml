@@ -18,6 +18,7 @@
         android:layout_weight="1"
         android:background="@drawable/barorange"
         android:backgroundTint="@android:color/holo_blue_dark"
+        android:onClick="backClick"
         android:text="Geri "
         android:textColor="#FFFFFF"
         android:textSize="25sp"
@@ -73,6 +74,7 @@
             android:layout_height="85dp"
             android:layout_weight="1"
             android:background="@drawable/barorange"
+            android:onClick="otuzClick"
             android:text="30"
             android:textColor="#FFFFFF"
             android:textSize="30sp" />
@@ -83,6 +85,7 @@
             android:layout_height="85dp"
             android:layout_weight="1"
             android:background="@drawable/bardark"
+            android:onClick="altmisClick"
             android:text="60"
             android:textColor="#FFFFFF"
             android:textSize="30sp" />
@@ -93,6 +96,7 @@
             android:layout_height="85dp"
             android:layout_weight="1"
             android:background="@drawable/barorange"
+            android:onClick="doksanClick"
             android:text="90"
             android:textColor="#FFFFFF"
             android:textSize="30sp" />
@@ -103,6 +107,7 @@
             android:layout_height="85dp"
             android:layout_weight="1"
             android:background="@drawable/bardark"
+            android:onClick="yuzyirmiClick"
             android:text="120"
             android:textColor="#FFFFFF"
             android:textSize="30sp" />
