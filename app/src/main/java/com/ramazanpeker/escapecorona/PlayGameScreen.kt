@@ -1,5 +1,7 @@
 package com.ramazanpeker.escapecorona
 
+import android.content.Context
+import android.content.SharedPreferences
 import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -22,9 +24,21 @@ class PlayGameScreen : AppCompatActivity() {
     private var mediaPlayer2: MediaPlayer?=null
 
     override fun onCreate(savedInstanceState: Bundle?) {
-
+        lateinit var sharedPreferences: SharedPreferences
+        var bestScore :Int?=null
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_play_game_screen)
+        sharedPreferences=this.getSharedPreferences("package com.ramazanpeker.escapecorona",
+            Context.MODE_PRIVATE)
+        bestScore=sharedPreferences.getInt("bestScore",-1)
+        if(bestScore==-1)
+        {
+            bestScoreText.text="0"
+        }
+        else
+        {
+            bestScoreText.text=bestScore.toString();
+        }
         mediaPlayer=MediaPlayer.create(this.applicationContext,R.raw.bells)
         mediaPlayer2=MediaPlayer.create(this.applicationContext,R.raw.wrong)
 
@@ -80,6 +94,9 @@ class PlayGameScreen : AppCompatActivity() {
             alert.setNegativeButton("NO"){dialog, which ->
                 finish()
 
+            }
+            if(bestScore<score) {
+                sharedPreferences.edit().putInt("bestScore", score).apply()
             }
             alert.show()
 
