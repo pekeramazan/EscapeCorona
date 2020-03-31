@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Escape Corona</string>
-    <string name="clickselectmodbutton">Mod Seç Butonuna tıkla</string>
-    <string name="setspeed">Hız Ayarla</string>
-    <string name="choosetime">Süre Seç</string>
-    <string name="gamewillstartautomatically">Oyun otomatik olarak başlayacaktır</string>
-    <string name="bacarefulaboutcoronavirus">Korona virüslerine dikkat et</string>
-    <string name="selectmode">MOD SEÇ</string>
-    <string name="howtoplay">NASIL OYNANIR</string>
-    <string name="back">GERİ</string>
+    <string name="back">Geri</string>
+    <string name="choose_time">Süre Seç</string>
+    <string name="set_speed">Hız Ayarla</string>
     <string name="time">Süre</string>
-    <string name="bestscore">En yüksek skor</string>
+    <string name="best_score">En iyi skor</string>
     <string name="score">Skor</string>
+    <string name="how_to_play">Nasıl Oynanır</string>
+    <string name="select_mode">Mod Seç</string>
+    <string name="exit">Çıkış</string>
     <string name="yes">Evet</string>
-    <string name="no">Hayır</string>
-    <string name="doyouwanttoplayagain">Tekrar oynamak ister misiniz ?</string>
     <string name="gameover">Oyun Bitti</string>
+    <string name="doyouwanttoplayagain">Tekrar Oynamak İster misiniz ?</string>
+    <string name="no">Hayır</string>
+    <string name="becareful_about_corona_virus">Korona virüsüne dikkat et!</string>
+    <string name="click_select_mod_button">Mod Seç butonuna tıkla</string>
+    <string name="game_will_start_automatically">Oyun otomatik olarak başlayacaktır</string>
 </resources>

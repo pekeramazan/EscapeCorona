@@ -85,13 +85,13 @@ class PlayGameScreen : AppCompatActivity() {
                 image.visibility=View.INVISIBLE
             }
             val alert=AlertDialog.Builder(this@PlayGameScreen)
-            alert.setTitle(("Game OVer"))
-            alert.setMessage("Do you want to play again ?")
-            alert.setPositiveButton("Yes"){dialog, which ->
+            alert.setTitle((getString(R.string.gameover)))
+            alert.setMessage(getString(R.string.doyouwanttoplayagain))
+            alert.setPositiveButton(getString(R.string.yes)){ dialog, which ->
                 finish()
                 startActivity(intent)
             }
-            alert.setNegativeButton("No"){dialog, which ->
+            alert.setNegativeButton(getString(R.string.no)){ dialog, which ->
                 finish()
 
             }
@@ -121,7 +121,7 @@ class PlayGameScreen : AppCompatActivity() {
     {
         mediaPlayer2?.start()
 
-        score=score-2;
+        score=score-10;
         scoreText.text=""+score
 
     }
