@@ -12,9 +12,9 @@
         android:id="@+id/seekBarTXT"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginStart="15dp"
-        android:layout_marginEnd="15dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="23dp"
         android:gravity="center"
         android:text="0"
         android:textColor="#FFFFFF"
@@ -28,7 +28,7 @@
         android:id="@+id/button8"
         android:layout_width="117dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="64dp"
+        android:layout_marginBottom="65dp"
         android:layout_weight="1"
         android:background="@drawable/barorange"
         android:backgroundTint="@android:color/holo_blue_dark"
@@ -43,10 +43,10 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="186dp"
-        android:layout_height="83dp"
+        android:layout_width="193dp"
+        android:layout_height="105dp"
         android:layout_marginTop="32dp"
-        android:layout_marginBottom="11dp"
+        android:layout_marginBottom="10dp"
         app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -55,11 +55,11 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="381dp"
-        android:layout_height="44dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="17dp"
         android:gravity="center"
         android:text="Süre Seç"
         android:textColor="#FFFFFF"
@@ -75,7 +75,7 @@
         android:layout_height="0dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="26dp"
+        android:layout_marginBottom="24dp"
         android:gravity="center"
         android:text="Hız Seç"
         android:textColor="#FFFFFF"
@@ -87,10 +87,10 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="346dp"
-        android:layout_height="85dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginEnd="28dp"
+        android:layout_width="347dp"
+        android:layout_height="91dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
         android:layout_marginBottom="49dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toTopOf="@+id/textView2"
@@ -145,16 +145,22 @@
 
     <SeekBar
         android:id="@+id/seekBar"
+        style="@style/Widget.AppCompat.SeekBar"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginStart="14dp"
-        android:layout_marginEnd="14dp"
-        android:layout_marginBottom="14dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="15dp"
         android:max="1000"
+        android:progress="700"
+        android:progressBackgroundTint="#FFFFFF"
+        android:progressTint="#FFFFB6"
+        android:scrollbarSize="4dp"
         app:layout_constraintBottom_toTopOf="@+id/seekBarTXT"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+       />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

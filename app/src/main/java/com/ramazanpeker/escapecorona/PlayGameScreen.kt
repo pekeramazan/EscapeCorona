@@ -87,11 +87,11 @@ class PlayGameScreen : AppCompatActivity() {
             val alert=AlertDialog.Builder(this@PlayGameScreen)
             alert.setTitle(("Oyun Bitti"))
             alert.setMessage("Tekrar Oynamak İster misin ?")
-            alert.setPositiveButton("yes"){dialog, which ->
+            alert.setPositiveButton("Evet"){dialog, which ->
                 finish()
                 startActivity(intent)
             }
-            alert.setNegativeButton("NO"){dialog, which ->
+            alert.setNegativeButton("Hayır"){dialog, which ->
                 finish()
 
             }
@@ -107,7 +107,6 @@ class PlayGameScreen : AppCompatActivity() {
         }
 
     }.start()
-
 
     }
 
