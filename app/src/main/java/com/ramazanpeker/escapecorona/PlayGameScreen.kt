@@ -1,9 +1,11 @@
 package com.ramazanpeker.escapecorona
 
+import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.CountDownTimer
 import android.os.Handler
+import android.view.MotionEvent
 import android.view.View
 import android.widget.ImageView
 import androidx.appcompat.app.AlertDialog
@@ -16,14 +18,27 @@ class PlayGameScreen : AppCompatActivity() {
     var ImageArray=ArrayList<ImageView>()
     var handler= Handler()
     var runnable=Runnable{}
+    private var mediaPlayer: MediaPlayer?=null
+    private var mediaPlayer2: MediaPlayer?=null
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_play_game_screen)
+        mediaPlayer=MediaPlayer.create(this.applicationContext,R.raw.bells)
+        mediaPlayer2=MediaPlayer.create(this.applicationContext,R.raw.wrong)
+
+        mediaPlayer?.setOnPreparedListener{
+        //
+        }
+        mediaPlayer2?.setOnPreparedListener{
+            //
+        }
 
         val intent=intent
         val  takeTime=intent.getIntExtra("mod",30)
+        val takeSpeed=intent.getStringExtra("speed")
+        var speed=takeSpeed.toInt()
         val time=takeTime.toLong()
 
         ImageArray.add(imageView1)
@@ -81,16 +96,21 @@ class PlayGameScreen : AppCompatActivity() {
 
 
 
-   fun increaseScore(view:View)
+   fun increaseScore(view: View)
   {
+      mediaPlayer?.start()
       score=score+1;
       scoreText.text=""+score
 
   }
     fun decreaseScore(view:View)
     {
+        mediaPlayer2?.start()
+
         score=score-2;
         scoreText.text=""+score
+
+
 
     }
 
@@ -104,7 +124,10 @@ class PlayGameScreen : AppCompatActivity() {
                 val random= Random()
                 val randomIndex=random.nextInt(20)
                 ImageArray[randomIndex].visibility=View.VISIBLE
-                handler.postDelayed(runnable,700)
+
+                val takeSpeed=intent.getStringExtra("speed")
+                var speed=takeSpeed.toLong()
+                handler.postDelayed(runnable,speed)
             }
 
         }
