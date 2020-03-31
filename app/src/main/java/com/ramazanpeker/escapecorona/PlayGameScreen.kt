@@ -85,13 +85,13 @@ class PlayGameScreen : AppCompatActivity() {
                 image.visibility=View.INVISIBLE
             }
             val alert=AlertDialog.Builder(this@PlayGameScreen)
-            alert.setTitle(("Oyun Bitti"))
-            alert.setMessage("Tekrar Oynamak İster misin ?")
-            alert.setPositiveButton("Evet"){dialog, which ->
+            alert.setTitle(("Game OVer"))
+            alert.setMessage("Do you want to play again ?")
+            alert.setPositiveButton("Yes"){dialog, which ->
                 finish()
                 startActivity(intent)
             }
-            alert.setNegativeButton("Hayır"){dialog, which ->
+            alert.setNegativeButton("No"){dialog, which ->
                 finish()
 
             }

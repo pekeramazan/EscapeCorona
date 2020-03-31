@@ -1,3 +1,18 @@
 <resources>
-    <string name="app_name">Escape Corona</string>
+    <string name="app_name" translatable="false">Escape Corona</string>
+    <string name="clickselectmodbutton">Click Select Mod Button</string>
+    <string name="setspeed">Set Speed</string>
+    <string name="choosetime">Choose Time</string>
+    <string name="gamewillstartautomatically">Game will start automatically</string>
+    <string name="bacarefulaboutcoronavirus">Becareful about corona virus</string>
+    <string name="selectmode">SELECT MODE</string>
+    <string name="howtoplay">HOW TO PLAY</string>
+    <string name="back">BACK</string>
+    <string name="time">Time</string>
+    <string name="bestscore">Best Score</string>
+    <string name="score">Score</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="doyouwanttoplayagain">Do you want to play again ?</string>
+    <string name="gameover">Game over</string>
 </resources>
