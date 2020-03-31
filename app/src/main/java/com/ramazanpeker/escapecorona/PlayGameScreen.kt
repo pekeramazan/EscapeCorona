@@ -111,15 +111,13 @@ class PlayGameScreen : AppCompatActivity() {
 
     }
 
+    fun increaseScore(view: View)
+    {
+        mediaPlayer?.start()
+        score=score+1;
+        scoreText.text=""+score
 
-
-   fun increaseScore(view: View)
-  {
-      mediaPlayer?.start()
-      score=score+1;
-      scoreText.text=""+score
-
-  }
+    }
     fun decreaseScore(view:View)
     {
         mediaPlayer2?.start()
@@ -127,10 +125,7 @@ class PlayGameScreen : AppCompatActivity() {
         score=score-2;
         scoreText.text=""+score
 
-
-
     }
-
 
     fun hideandShowandom(){
         runnable=object:Runnable{
@@ -145,6 +140,7 @@ class PlayGameScreen : AppCompatActivity() {
                 val takeSpeed=intent.getStringExtra("speed")
                 var speed=takeSpeed.toLong()
                 handler.postDelayed(runnable,speed)
+
             }
 
         }
