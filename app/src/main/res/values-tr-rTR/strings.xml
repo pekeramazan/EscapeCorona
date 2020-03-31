@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Escape Corona</string>
+    <string name="app_name">Koronadan Kaç!</string>
     <string name="back">Geri</string>
     <string name="choose_time">Süre Seç</string>
     <string name="set_speed">Hız Ayarla</string>
