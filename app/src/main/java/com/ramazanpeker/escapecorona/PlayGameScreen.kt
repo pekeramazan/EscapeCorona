@@ -98,7 +98,13 @@ class PlayGameScreen : AppCompatActivity() {
             if(bestScore<score) {
                 sharedPreferences.edit().putInt("bestScore", score).apply()
             }
+            alert.setCancelable(false)
+            setFinishOnTouchOutside(false)
             alert.show()
+
+
+
+
 
         }
 

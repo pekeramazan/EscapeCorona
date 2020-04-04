@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="25dp"
         android:gravity="center"
-        android:text="@string/becareful_about_corona_virus"
+        android:text="@string/becareful_about_virus"
         android:textColor="#FFFFFF"
         android:textSize="12sp"
         app:layout_constraintBottom_toTopOf="@+id/button9"
